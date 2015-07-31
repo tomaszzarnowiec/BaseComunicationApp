@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-12">
+		{{main.name2}}
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="input-group">
+					<input type="text" name="text" value="" placeholder="search..." ng-model="searchText" class="form-control">
+					<span class="input-group-addon">
+						<i class="fa fa-search"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row animated fadeInLeft" ng-repeat="item in contacts">
+			<div class="col-xs-12">{{item.name}} - {{item.number}}</div>
+		</div>
+		
+	</div>
+</div>
